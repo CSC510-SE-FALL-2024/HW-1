@@ -1,0 +1,25 @@
+name: Code Quality Checks
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    name: Run Linting and Code Quality Checks
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12' 
+
+      - name: Install dependencies
+        run: |
+          pip install autopep8
+
+      - name: Run autopep8
+        run: |
+          autopep8 --in-place --recursive .
