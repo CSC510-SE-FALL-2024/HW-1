@@ -23,3 +23,19 @@ rand.py:6:23: W1510: 'subprocess.run' used without explicitly defining the value
 -----------------------------------
 Your code has been rated at 3.87/10
 
+************* Module rand
+rand.py:22:0: C0304: Final newline missing (missing-final-newline)
+
+------------------------------------------------------------------
+Your code has been rated at 8.57/10 (previous run: 3.87/10, +4.70)
+
+************* Module rand
+rand.py:23:0: C0304: Final newline missing (missing-final-newline)
+
+------------------------------------------------------------------
+Your code has been rated at 8.57/10 (previous run: 8.57/10, +0.00)
+
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 8.57/10, +1.43)
+
