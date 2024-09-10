@@ -12,7 +12,7 @@ def merge_sort(arr):
         Returns:
             List[int]: The sorted list.
     """
-    if len(arr) == 1:
+    if len(arr) <= 1:
         return arr
 
     half = len(arr)//2
@@ -40,10 +40,10 @@ def recombine(left_arr, right_arr):
             right_index += 1
 
     for i in range(right_index, len(right_arr)):
-        merge_arr[left_index + right_index] = right_arr[i]
+        merge_arr[left_index + i] = right_arr[i]
 
     for i in range(left_index, len(left_arr)):
-        merge_arr[left_index + right_index] = left_arr[i]
+        merge_arr[i + right_index] = left_arr[i]
 
     return merge_arr
 
