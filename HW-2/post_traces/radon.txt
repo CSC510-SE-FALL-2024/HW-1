@@ -1,0 +1,10 @@
+#radon cc command
+hw2_debugging.py
+    F 11:0 recombine - B
+    F 3:0 mergeSort - A
+rand.py
+    F 3:0 random_array - A
+
+#radon mi command    
+hw2_debugging.py - A
+rand.py - A
