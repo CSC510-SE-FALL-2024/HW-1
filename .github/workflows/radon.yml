@@ -27,7 +27,4 @@ jobs:
         pip install radon
 
     - name: Run radon
-      run: radon cc **/*.py
-
-    - name: Run radon
-      run: radon mi **/*.py
+      run: radon **/*.py
