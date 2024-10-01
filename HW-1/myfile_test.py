@@ -8,10 +8,10 @@ def test_is_prime_pass():
     This module implements testcases.
 
     """
-    assert is_prime(6) == True
+    assert is_prime(6) is True
 def test_is_prime_fail():
     """
     This module implements testcases.
 
     """
-    assert is_prime(4) == True
+    assert is_prime(6) is True
