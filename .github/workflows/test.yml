@@ -23,5 +23,5 @@ jobs:
         run:  pytest ./HW-2/test_cases.py
 
       - name: Run test for hw-1
-        run: pytest ./myfile_test.py  # Run your tests
+        run: pytest ./HW-1/myfile_test.py  # Run your tests
             
